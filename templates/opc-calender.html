@@ -1,0 +1,186 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="{% static "icons/favicon.ico" %}">
+    <link href="/feed/" rel="alternate" type="application/rss+xml" title="Q Blog Feed" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/component.css" %}" />
+    <script src="{% static "js/modernizr.custom.js" %}"></script>
+    <!--<title>Blog Template for Bootstrap</title>-->
+
+    
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+
+    
+    <link href="{% static "css/blog.css" %}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static "tipuedrop/tipuedrop.css" %}">
+<script src="{% static "js/jquery.min.js" %}"></script>
+
+
+<script type="text/javascript" src="{% static "tipuedrop/tipuedropcontent.js" %}"></script>
+
+<script type="text/javascript" src="{% static "tipuedrop/tipuedrop.js" %}"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <style type="text/css">
+   .cntr li{
+    text-align: center;
+   }
+   
+   </style>
+  </head>
+
+  <body>
+          
+           
+        
+ <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=812211218838754&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    
+        <div style="width:100%;">
+      
+      <ul id="cbp-tm-menu" class="cbp-tm-menu">
+        <a href="#" style="background:url("http://tympanus.net/Development/AnimatedHeaderBackgrounds/img/deco.svg")" class="main-title">LOGO</a>
+        
+        <li>
+
+            <a href="{% url "index" %}">Home</a>
+  
+        </li>
+        
+        <li>
+          <a href="#">Programming Sites</a>
+          <ul class="cbp-tm-submenu cntr">
+           
+  <li><a href="http://www.topcoder.com/tc"  target="_blank" style="">TopCoder</a></li>
+  <li><a href="http://codeforces.com/"  target="_blank" style="">Codeforces</a></li>
+  <li><a href="http://ace.delos.com/usacogate"  target="_blank" style="">USACO</a></li>
+  <li><a href="http://www.urionlinejudge.com.br/judge/login"  target="_blank" style="">URI Online Judge</a></li>
+  <li><a href="https://www.spoj.pl/ranks/users/EG/"  target="_blank" style="">SPOJ</a></li>
+  <li><a href="http://uva.onlinejudge.org/"  target="_blank">UVa Online Judge</a></li>
+  <li><a href="http://ahmed-aly.com/"  target="_blank">A<sup>2 &nbsp;</sup>Online Judge</a></li>
+  <li><a href="http://www.codechef.com/"  target="_blank">CodeChef</a></li>
+  <li><a href="http://itbhu.ac.in/codefest/index.php"  target="_blank" style="">Codefest</a></li>
+  <li><a href="http://www.z-trening.com/"  target="_blank">Z-Trening</a></li>
+  <li><a href="http://acm.zju.edu.cn/onlinejudge/"  target="_blank" style="">ZOJ</a></li>
+  <li><a href="http://acm.timus.ru/"  target="_blank" style="">Timus Online Judge</a></li>
+  <li><a href="http://acm.tju.edu.cn/toj/"  style="">TJU Online Judge</a></li>
+  <li><a href="http://acm.sgu.ru/"  target="_blank" style="">Saratov SU Online Contester (SGU)</a></li>
+  <li><a href="http://coj.uci.cu/"  target="_blank" style="">Caribbean Online Judge (COJ)</a></li>
+  <li><a href="http://acm.hit.edu.cn/hoj"  target="_blank" style="">HIT Online Judge (HOJ)</a></li>
+  <li><a href="http://poj.org/" target="_blank" style="">Peking University Online Judge (PKU)</a></li>
+  <li><a href="http://www.lightoj.com/"  target="_blank" style="">Light Online Judge (LOJ)</a></li>
+  <li><a href="http://acm.mipt.ru/judge"  target="_blank" style="">El Judge</a></li>
+</ul>
+        </li>
+        <li>
+          <a href="#">Competitions</a>
+          <ul class="cbp-tm-submenu cntr">
+            <li><a href="http://www.usaco.org/index.php"  target="_blank" style="">USACO</a></li>
+<li><a href="http://www.hsin.hr/coci/"  target="_blank">Croatian Open Competition in Informatics</a></li>
+<li><a href="/ch24.org"  target="_blank">Challenge 24</a></li>
+<li><a href="http://code.google.com/codejam/"  target="_blank">Google Code Jam</a></li>
+<li><a href="http://acm.zju.edu.cn/onlinejudge/showContests.do"  target="_blank">ZOJ</a></li>
+<li><a href="http://ipsc.ksp.sk/"  target="_blank">Internet Problem Solving Contest</a></li>
+<li><a href="http://www.facebook.com/hackercup"  target="_blank">Facebook Hacker Cup</a></li>
+<li><a href="http://www.codecup.nl/intro.php"  target="_blank">Code Cup</a></li>
+<li><a href="http://codeforces.com/yandex2011"  target="_blank">Yandex.Algorithm</a></li>
+<li><a href="http://hs.spoj.pl/"  target="_blank">SPOJ High School Programming League</a></li>
+<li><a href="http://codesprint.interviewstreet.com/recruit/challenges"  target="_blank">CodeSprint</a></li>
+   
+</ul>
+        </li>
+        <li>
+          <a href="#">Useful Links</a>
+          <ul class="cbp-tm-submenu cntr">
+            <li><a href="https://www.otinn.com/"  target="_blank" style="">Otinn Tools</a></li>
+  <li><a href="http://problemclassifier.appspot.com/" target="_blank">SPOJ Classification by Pratik Tandel</a></li>
+  <li><a href="http://iadjust3.scm.ca/tcstats/"  target="_blank" style="">TopCoder Member Statistics</a></li>
+  <li><a href="http://topcoder.manabase.com/graph.php"  target="_blank" style="">TopCoder History Graphs Comparer</a></li>
+  <li><a href="http://topcoder.manabase.com/divSummary.php"  target="_blank" style="">TopCoder Simple Division Summary</a></li>
+  <li><a href="http://felix-halim.net/tc/"  target="_blank" style="">TopCoder Chat Rooms by felix_halim</a></li>
+  <li><a href="http://dennysite.com/projects/topcoder/stats/whatif/srmform.php"  target="_blank" style="">SRM Simulator by dennismv</a></li>
+  <li><a href="http://ahmed-aly.com/TopCoderTools/"  target="_blank" style="">TopCoder Tools by Ahmed Aly</a></li>
+  <li><a href="http://ahmed-aly.com/UVaAndSPOJ/"  target="_blank" style="">UVa and SPOJ Tools by Ahmed Aly</a></li>
+  <li><a href="http://www.uvatoolkit.com/problemssolve.php"  target="_blank" style="">UVa Toolkit by gmark</a></li>
+  <li><a href="http://ahmed-aly.com/CodeforcesTools/"  target="_blank">Codeforces Tools by Ahmed Aly</a></li>
+  <li><a href="http://www.shafaetsplanet.com/oj.php"  target="_blank" style="">Online Judge Problems' Locator</a></li>
+  
+  <li><a href="http://shygypsy.com/acm/"  target="_blank">Igor's UVa tools</a></li>
+  <li><a href="http://ahmed-aly.com/CodeJamTools"  target="_blank" style="">Google Code Jam Tools by Ahmed Aly</a></li>
+  <li><a href="http://ahmed-aly.com/"  target="_blank">Virtual Online Contests by Ahmed Aly</a></li>
+  <li><a href="http://acm.hust.edu.cn:8080/judge/toIndex.action"  target="_blank" style="">Virtual Judge</a></li>
+  <li><a href="http://www.codemashup.com/#welcome" target="_blank" style="">Code Mashup</a></li>
+          </ul>
+        </li>
+        <li><a href="/forum/">Q&A Forum</a></li>
+      <li><a href="/opc-calender/">OPC calender</a></li>
+        <li>
+        <div class="block" style="padding-top:;">
+
+<form action="">
+<input type="text" name="q" id="tipue_drop_input" autocomplete="off" placeholder="Search for posts here..." required>
+</form>
+<div id="tipue_drop_content"></div>
+
+</div></li>
+      
+      
+      </ul>
+
+    </div>
+    
+      <div style="height:50px;">
+    </div>
+
+    <div class="" >
+
+
+<iframe src="https://www.google.com/calendar/embed?src=hb26migjl0dktrssgdg5ocedoo%40group.calendar.google.com&ctz=Asia/Calcutta" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+</div>
+<div class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/docs.min.js" %}"></script>
+    <script src="{% static "js/cbpTooltipMenu.min.js" %}"></script>
+    <script src="{% static "js/TweenLite.min.js" %}"></script>
+    <script src="{% static "js/EasePack.min.js" %}"></script>
+    <script src="{% static "js/rAF.js" %}"></script>
+    <script src="{% static "js/demo.js" %}"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+    $(document).ready(function() {
+     $('#tipue_drop_input').tipuedrop();
+});
+      var menu = new cbpTooltipMenu( document.getElementById( 'cbp-tm-menu' ) );
+    </script>
+    <script type="text/javascript">
+window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+</script>
+  </body>
+</html>

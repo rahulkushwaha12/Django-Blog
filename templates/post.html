@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load django_markdown %}
+
+{% block blog_entries %}
+<title>{{ object.title }}</title>
+  <div class="post">
+    <h3><a href="{% url "entry_detail" slug=object.slug %}">{{ object.title }}</a></h3>
+    <p class="meta">
+      {{ object.created }} |
+      Tagged under: {{  object.tags.all|join:", " }}
+      
+    </p>
+  
+      <div style="float:left" class="fb-like" data-href="{% url "entry_detail" slug=object.slug %}" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      <div style="float:left" class="fb-share-button" data-href="{% url "entry_detail" slug=object.slug %}" data-layout="box_count"></div>
+
+          <a style="float:right" class="twitter-share-button"
+  href="{% url "entry_detail" slug=object.slug %}"
+  data-via="farzirahu"
+  data-count="vertical">
+Tweet
+</a>
+     <div style="float:right" class="g-plusone" data-size="tall"></div>
+  
+  
+    {{ object.body|markdown }}
+  </div>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'rahulkushwaha'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+    
+{% endblock %}

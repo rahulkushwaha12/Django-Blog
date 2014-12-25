@@ -1,0 +1,25 @@
+<title>My Blog</title>
+{% extends "base.html" %}
+{% load django_markdown %}
+
+{% block blog_entries %}
+{% for object in object_list %}
+  <div class="post">
+    <h3><a href="{% url "entry_detail" slug=object.slug %}">{{ object.title }}</a></h3>
+    <p class="meta">
+      {{ object.created }} |
+      Tagged under {{  object.tags.all|join:", " }}
+    </p>
+    {{ object.body|markdown|truncatewords:"80"|linebreaks }}
+    <a href="{% url "entry_detail" slug=object.slug %}">Read More</a>
+  </div>
+{% endfor %}
+
+{% endblock %}
+{% block side_entries %}
+{% for object in object_list %}
+  
+    <li><a href="{% url "entry_detail" slug=object.slug %}">{{ object.title }}</a></li>
+    
+{% endfor %}
+{% endblock %}
